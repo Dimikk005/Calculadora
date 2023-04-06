@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main()
+{
+	float n1,n2,res;
+	int conta;
+	
+	printf("coloque um valor:\n");
+	scanf("%f",&n1); 
+	
+	printf("coloque outro valor:\n");
+	scanf("%f",&n2);
+	
+	printf("qual operacao voc� deseja\n");
+	printf("1-soma\n");
+	printf("2-multiplicacao\n");
+	printf("3-subtracao\n");
+	printf("4-divisao\n");
+	scanf("%d",&conta); 
+	
+	switch ("%d",conta)
+	{
+		case 1 :
+			res = n1 + n2;
+			break;
+			
+		case 2 :
+			res = n1 * n2; 
+			break;
+			
+		case 3 :
+			res= n1 - n2;
+			break;
+			
+		case 4 :
+			res = n1 / n2;
+			break;
+	}
+	printf("resultado : %f\n", res);
+	return 0;
+}
